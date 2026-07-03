@@ -296,7 +296,7 @@ def load_model(filename):
 
 
 try:
-    retail = load_csv("cleaned_retail.csv")
+    retail = load_csv("cleaned_retail.csv.gz")
     retail["InvoiceDate"] = pd.to_datetime(retail["InvoiceDate"])
     segments = load_csv("customer_segments.csv")
     rfm = load_csv("rfm_data.csv")
